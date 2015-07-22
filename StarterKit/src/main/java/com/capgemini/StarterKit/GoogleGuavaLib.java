@@ -20,7 +20,7 @@ public class GoogleGuavaLib {
 		}
 	};
 
-	private static void printEach(Iterable<Integer> evenNumbers) {
+	public static void printEach(Iterable<Integer> evenNumbers) {
 		for (Object object : evenNumbers) {
 			System.out.print(object + " ");
 		}
