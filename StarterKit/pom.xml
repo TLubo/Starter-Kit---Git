@@ -22,8 +22,10 @@
   		<scope>test</scope>
   	</dependency>
   	<dependency>
-  		<groupId>org.free</groupId>
-  		<artifactId>jfreechart</artifactId>
-  	</dependency>
+	<groupId>com.google.guava</groupId>
+	<artifactId>guava</artifactId>
+	<version>18.0</version>
+</dependency>
+  	
   </dependencies>
 </project>
