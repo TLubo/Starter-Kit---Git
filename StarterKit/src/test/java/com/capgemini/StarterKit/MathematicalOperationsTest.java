@@ -35,4 +35,19 @@ public class MathematicalOperationsTest {
 		Assert.assertEquals(50, MathematicalOperations.adding(20, 30), 0);
 	}
 
+	@Test
+	public void testShouldFactorialWhen5Then120(){
+		Assert.assertEquals(120, MathematicalOperations.factorial(5));
+	}
+	
+	@Test
+	public void testShouldFactorialWhen0Then1(){
+		Assert.assertEquals(1, MathematicalOperations.factorial(0));
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testShouldFactorialWhenParameterNegativeThenIllegalArgumentException(){
+		MathematicalOperations.factorial(-1);
+	}
+
 }

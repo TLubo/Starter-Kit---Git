@@ -14,4 +14,14 @@ public class MathematicalOperations {
 		return number1 + number2;
 	}
 
+	public static long factorial(int n){
+		if(n >= 0){
+			long factorial = 1;
+			for(int i = 1; i <= n; i++){
+				factorial *= i;
+			}
+			return factorial;
+		}
+		throw new IllegalArgumentException("n must be greater than or equal to 0");
+	}
 }
