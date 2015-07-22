@@ -10,7 +10,7 @@ public class MathematicalOperations {
 		return result;
 	}
 
-	public double adding(double number1, double number2) {
+	public static double adding(double number1, double number2) {
 		return number1 + number2;
 	}
 

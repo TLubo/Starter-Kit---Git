@@ -1,6 +1,8 @@
 
 package com.capgemini.StarterKit;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -23,14 +25,14 @@ public class MathematicalOperationsTest {
 
 	@Test
 	public void testAddingWhen0Added0Equals0() {
-		MathematicalOperations mathematic = new MathematicalOperations();
-		Assert.assertEquals(0, mathematic.adding(0, 0), 0);
+
+		assertEquals(0.0, MathematicalOperations.adding(0, 0), 0);
 	}
 
 	@Test
 	public void testAddingWhen20Added30Equals50() {
-		MathematicalOperations mathematic = new MathematicalOperations();
-		Assert.assertEquals(50, mathematic.adding(20, 30), 0);
+
+		Assert.assertEquals(50, MathematicalOperations.adding(20, 30), 0);
 	}
 
 }
